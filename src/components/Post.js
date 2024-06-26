@@ -7,6 +7,7 @@ const Post = ({post,postIndex}) => {
   const navigate=useNavigate();
   const {width}=useWindowsize();
   const categories =['Travel','Tech','Finance','Fashion','Food','PesonalBlog','Sports'];
+      const imageUrl = post.imageUrl.replace(/\\/g, '/');
   
   const handleReadMoreClick = async () => {
     // Navigate to the root URL
@@ -22,7 +23,7 @@ const Post = ({post,postIndex}) => {
     <div className='post-image-1 d-flex flex-column justify-content-center'>
       <div>
           {(postIndex % 2 !== 0  ||  width <=768 )? (
-            const imageUrl = post.imageUrl.replace(/\\/g, '/');
+        
             <img className="img-fluid" src={`https://blogsite-3gsy.onrender.com/${imageUrl}`} alt='' />
           ) : null}
         </div>
@@ -48,7 +49,6 @@ const Post = ({post,postIndex}) => {
    </div>  */}
      <div className='post-image-2 d-flex flex-column justify-content-center'>
           {(postIndex % 2 === 0  && width>768)? (
-            const imageUrl = post.imageUrl.replace(/\\/g, '/');
             <img className="img-fluid" src={`https://blogsite-3gsy.onrender.com/${imageUrl}`} alt='' />
           ) : null}
         </div>
