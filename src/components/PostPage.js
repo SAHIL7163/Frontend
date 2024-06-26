@@ -58,7 +58,6 @@ const PostPage = ({posts,handleDelete}) => {
    <p className="postDate">{post.datetime}</p>
    <p>{post.user}</p>
    <div className='d-flex justify-content-center'>
- /*   <img  className="img-fluid" style ={{ 'width': '650px',display:'block' }}src={`http://localhost:3500/${post.imageUrl}`}/> */
    <img  className="img-fluid" style ={{ 'width': '650px',display:'block' }}src={`https://blogsite-api-mi38.onrender.com/${post.imageUrl}`}/> 
    </div>
  {/*  <p style={{ whiteSpace: 'pre-line', textIndent: '2em'}} className="my-5 postBody ps-4">{post.body}</p>  */}
