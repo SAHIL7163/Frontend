@@ -155,11 +155,10 @@ const Login = () => {
                 <button className='sign-button btn-primary btn mb-3'>Sign In</button>
                 {/*   <h4 style={{textAlign:'center'}}>or</h4> */}
                   
-     <div className='mb-3'>
+   <div className='mb-3'>
        <div className="input-group" >
             <div className="google-auth">
-      <a href="http://localhost:3500/auth/google" style={{color:'white',textDecoration: 'none'}}>
- /*       <a href="https://blogsite-3gsy.onrender.com/auth/google" style={{color:'white',textDecoration: 'none'}}> */ 
+  <a href="http://localhost:3500/auth/google" style={{color:'white',textDecoration: 'none'}}>
         <FcGoogle style={{fontSize:'35px'}}/>
         <span style={{paddingLeft:'10px'}}>Sign In with Google</span>
       </a>
