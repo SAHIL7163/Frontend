@@ -158,7 +158,7 @@ const Login = () => {
    <div className='mb-3'>
        <div className="input-group" >
             <div className="google-auth">
-  <a href="https://blogsite-3gsy.onrender.com/auth/google" style={{color:'white',textDecoration: 'none'}}>
+  <a href="https://blogsite-api-mi38.onrender.com/auth/google" style={{color:'white',textDecoration: 'none'}}>
         <FcGoogle style={{fontSize:'35px'}}/>
         <span style={{paddingLeft:'10px'}}>Sign In with Google</span>
       </a>
