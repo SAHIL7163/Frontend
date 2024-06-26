@@ -535,6 +535,18 @@ width:70%;
   border: 2px solid  #212529;
   /* box-shadow: 10px 10px 10px  #212529; */
  }
+
+.post-para {
+  margin-top: 0.4rem; /* Adjust margin as needed */
+  font-size: 1.4rem;
+ 
+  word-break: break-word; /* Break long words to fit within the container */
+  overflow-wrap: break-word; /* Ensure words break at the end of the line if needed */
+  hyphens: auto; /* Enable hyphenation to break words at appropriate points */
+  text-indent: 2rem; /* Optional: Adjust indentation as needed */
+  white-space: pre-line; /* Preserve line breaks */
+}
+
  .post-container{
   display: flex;
   justify-content:space-between;
