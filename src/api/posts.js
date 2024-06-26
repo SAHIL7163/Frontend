@@ -1,6 +1,6 @@
 import axios from "axios";
 //const BASE_URL = 'http://localhost:3500';
-const BASE_URL = 'https://blogsite-api.onrender.com';        //for production
+const BASE_URL = 'https://blogsite-api-mi38.onrender.com';        //for production
 
 export default axios.create(
     {
