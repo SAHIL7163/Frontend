@@ -3,6 +3,7 @@ import { useParams,Link } from 'react-router-dom'
 import axios from '../api/posts'
 import useAxiosPrivate from '../hooks/useAxiosPrivate'
 import useAuth from '../hooks/useAuth'
+import { Container } from 'react-bootstrap';
 
 const ROLES = 
 {
@@ -61,14 +62,16 @@ const PostPage = ({posts,handleDelete}) => {
    <img  className="img-fluid" style ={{ 'width': '650px',display:'block' }}src={`https://blogsite-api-mi38.onrender.com/${post.imageUrl}`}/> 
    </div>
  {/*  <p style={{ whiteSpace: 'pre-line', textIndent: '2em'}} className="my-5 postBody ps-4">{post.body}</p>  */}
-   <div className='my-5'>
-      {paragraphs.map((paragraph, index) => (
-        <p key={index} style={{ marginTop: '0.4rem',whiteSpace: 'pre-line', textIndent: '2rem' }} className="post-Body">
-          {paragraph}
-        </p>
-      ))}
-    </div> 
-
+   <article className="my-5">
+      <Container>
+        {paragraphs.map((paragraph, index) => (
+          <p key={index} className="post-para">
+            {paragraph}
+          </p>
+        ))}
+      </Container>
+    </article>
+        
     </>}
 {(auth.user.username === post.user) &&
     <> 
