@@ -1065,6 +1065,11 @@ width: 100%;} */
     width: 85%;
     margin: auto;
    }
+    .post-para {
+    text-indent: 0; 
+    font-size: 1.2rem;
+   }/* Remove indent on smaller screens */
+   
    .PostPage button{
       font-size: 1.3rem;
       width: 8rem;
