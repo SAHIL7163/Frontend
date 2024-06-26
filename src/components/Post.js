@@ -24,7 +24,7 @@ const Post = ({post,postIndex}) => {
       <div>
           {(postIndex % 2 !== 0  ||  width <=768 )? (
         
-            <img className="img-fluid" src={`https://blogsite-3gsy.onrender.com/${imageUrl}`} alt='' />
+            <img className="img-fluid" src={`https://blogsite-api-mi38.onrender.com/${imageUrl}`} alt='' />
           ) : null}
         </div>
     </div>
@@ -49,7 +49,7 @@ const Post = ({post,postIndex}) => {
    </div>  */}
      <div className='post-image-2 d-flex flex-column justify-content-center'>
           {(postIndex % 2 === 0  && width>768)? (
-            <img className="img-fluid" src={`https://blogsite-3gsy.onrender.com/${imageUrl}`} alt='' />
+            <img className="img-fluid" src={`https://blogsite-api-mi38.onrender.com/${imageUrl}`} alt='' />
           ) : null}
         </div>
     </div>
