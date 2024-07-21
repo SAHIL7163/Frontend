@@ -14,7 +14,7 @@ const Travel = ({posts}) => {
   return ( 
     <main className="Home d-flex flex-column justify-content-center">
       <h1 className='text-center'>Travel-Blogs</h1>
-      {financeposts ? 
+      {financeposts.length > 0 ? 
        (financeposts.map((post,index)=>(
     <Post key={post.id} post={post} postIndex={index} />
    ))
