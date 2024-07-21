@@ -17,7 +17,7 @@ const Tech = ({posts}) => {
        (techposts.map((post,index)=>(
     <Post key={post.id} post={post} postIndex={index} />
    ))
-    ): <p>Loading...</p>}
+    ): <p className='emptycategory'>Loading...</p>}
     </main>
   )
 }
