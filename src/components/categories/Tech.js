@@ -13,7 +13,7 @@ const Tech = ({posts}) => {
   return ( 
     <main className="Home d-flex flex-column justify-content-center">
       <h1 className='text-center'>Tech-Blogs</h1>
-      {techposts ? 
+      {techposts.length > 0 ? 
        (techposts.map((post,index)=>(
     <Post key={post.id} post={post} postIndex={index} />
    ))
