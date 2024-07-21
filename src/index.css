@@ -484,6 +484,20 @@ width:70%;
   justify-self: center;
   
 }
+
+.emptycategory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  margin: auto; /* Remove default margin */
+  font-weight: 600;
+}
+
+
 .category-1{
   background-image: url('./img/GettyImages-930881934-5ae56fe48023b90036464e72.jpg');
   background-repeat:no-repeat;
