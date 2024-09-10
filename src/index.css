@@ -762,6 +762,56 @@ width:70%;
   margin-bottom: 0.2rem;
 }
 
+/* Editor Component Styles */
+.Editor {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 3px solid #212529;
+}
+
+/* ReactQuill Toolbar */
+.ql-toolbar {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 3px solid #212529;
+  margin-bottom: 10px;
+
+}
+
+/* ReactQuill Editor Area */
+.ql-container {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 3px solid #212529;
+}
+
+/* ReactQuill Editor Content */
+.ql-editor {
+  min-height: 200px; /* Adjust height as needed */
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  padding: 15px;
+  border: 3px solid #212529;
+}
+
+/* Placeholder styling */
+.ql-editor.ql-blank::before {
+  color: #ccc;
+  
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .Editor {
+    padding: 10px;
+  }
+}
+
+
  .Register{
   padding: 40px;
   background-color:#e8f0f190;
