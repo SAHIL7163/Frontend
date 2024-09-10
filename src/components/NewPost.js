@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
+import Editor from './Editor';
+
 
 
 const NewPost = ({
@@ -45,15 +47,17 @@ const NewPost = ({
             <div className="mb-3">
        <label htmlFor='postBody' className='form-label text-black'>
         <h5>Post:</h5></label>
-      <textarea
+    {/*   <textarea
       id="postBody"
       className='form-control focus-outline-black'
       required
       autoComplete='off'
       value={postBody}
       onChange={(e)=>setPostBody(e.target.value)}
-      ></textarea>
+      ></textarea> */}
+     <Editor value={postBody} onChange={setPostBody}/>
       </div>
+
 
 
       <label htmlFor="category" className='form-label text-dark fs-5'>Category:</label>
