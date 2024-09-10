@@ -5,6 +5,7 @@ import useAxiosPrivate from '../hooks/useAxiosPrivate'
 import useAuth from '../hooks/useAuth'
 import { Container } from 'react-bootstrap';
 
+
 const ROLES = 
 {
   'User': 2001 ,
@@ -39,6 +40,7 @@ const PostPage = ({posts,handleDelete}) => {
    
   const isAdmin = auth?.roles?.includes(ROLES.Admin); 
   const postBody = post.body;
+  
   if (!postBody) {
     return null; // or some default content or message
   }
@@ -59,19 +61,18 @@ const PostPage = ({posts,handleDelete}) => {
    <p className="postDate">{post.datetime}</p>
    <p>{post.user}</p>
    <div className='d-flex justify-content-center'>
-   <img  className="img-fluid" style ={{ 'width': '650px',display:'block' }}src={`https://blogsite-api-mi38.onrender.com/${post.imageUrl}`}/> 
+   <img  className="img-fluid" style ={{ 'width': '650px',display:'block' }}src={`http://localhost:3500/${post.imageUrl}`}/>
    </div>
  {/*  <p style={{ whiteSpace: 'pre-line', textIndent: '2em'}} className="my-5 postBody ps-4">{post.body}</p>  */}
-   <article className="my-5">
+ <article className="my-5">
       <Container>
-        {paragraphs.map((paragraph, index) => (
+       {paragraphs.map((paragraph, index) => (
           <p key={index} className="post-para">
-            {paragraph}
+          <span className="content" dangerouslySetInnerHTML={{__html:paragraph}} />
           </p>
         ))}
       </Container>
     </article>
-        
     </>}
 {(auth.user.username === post.user) &&
     <> 
@@ -83,6 +84,7 @@ const PostPage = ({posts,handleDelete}) => {
     </div> 
      </>
   }
+  
   
   {!post &&
    <>
@@ -100,6 +102,7 @@ const PostPage = ({posts,handleDelete}) => {
 }
 
 export default PostPage
+
 
 
 
