@@ -2,6 +2,8 @@ import React from 'react'
 import { useEffect } from 'react';
 import { Link,useParams } from 'react-router-dom';
 import { useState } from 'react';
+import Editor from './Editor';
+
 const Editpost = (
 {posts, edittitle,setedittitle,editpostbody,seteditpostbody,handleEdit,image,setImage,categoryId,SetcategoryId }
 ) => {
@@ -55,7 +57,7 @@ const Editpost = (
       ></input>
       </div>
 
-      <div className="mb-3">
+    {/*   <div className="mb-3">
        <label htmlFor='postBody' className='form-label h5'>Post:</label>
       <textarea
       id="postBody"
@@ -64,7 +66,8 @@ const Editpost = (
       value={editpostbody}
       onChange={(e)=>seteditpostbody(e.target.value)}
       ></textarea>
-      </div>
+      </div> */}
+    <Editor value={editpostbody} onChange={seteditpostbody}/>
 
       <label htmlFor="category" className='form-label text-dark fs-5'>Category:</label>
                 <select id="category" value={categoryId} onChange={onCategorychanged} className='fs-5' style={{height:'2rem'}}>
