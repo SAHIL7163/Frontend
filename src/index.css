@@ -381,7 +381,11 @@ button {
 
 
  */
-
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
  body {
   /*  min-height: 100vh; */
    font-family: 'Open Sans', sans-serif;
@@ -405,7 +409,9 @@ button {
    box-shadow: 0px 0px 15px gray;
    background-color: rgb(87, 152, 196);
    /* background-color: rgb(99, 196, 222); */ 
- }  
+ }
+ 
+ 
 
  .Home{
   background-color:#e8f0f190;
@@ -625,8 +631,29 @@ width:70%;
   height: 4rem;
   border-radius: 0.8rem;
  }
-/* 
- */
+
+ .scrollable-content {
+  max-height: 500px; /* Adjust height as needed */
+  overflow-y: auto;
+ 
+  padding: 0rem;
+ /*  background-color: #e8f0f190; */
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 0px;
+   background-color:none; 
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background: #e8f0f190;
+  border-radius: 4px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background: #e8f0f190;;
+}
+
  .delete-button{
   width: 80px;
   background-color: red;
@@ -667,6 +694,35 @@ width:70%;
   width: 90%;
   margin: auto;
   font-size: 1.4rem;
+ }
+
+ .postpage-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+ }
+ .like{
+  font-size: 60px;
+ }
+ .likeno{
+  margin-left:4px;
+  font-size: 50px;
+  margin-top: 14px;
+}
+.dislikeno{
+ margin-left:4px;
+ font-size: 50px;
+ margin-top: 4px;
+}
+ .dislike{
+  font-size: 60px;
+ }
+ .comment{
+  font-size: 60px;
+ }
+ .share{
+  font-size: 60px;
+  margin-bottom: 1rem;
  }
  /* .searchForm
  {
@@ -1129,6 +1185,10 @@ width: 100%;} */
     width: 85%;
     margin: auto;
    }
+
+   
+  
+   
     .post-para {
     text-indent: 0; 
     font-size: 1.2rem;
@@ -1148,6 +1208,8 @@ width: 100%;} */
    .post button{
     margin-right: 0;
    }
+
+   
 
    .nav-logo{
     width: 220px;
@@ -1173,6 +1235,45 @@ width: 100%;} */
     font-weight: 400;
     margin-bottom: 1.4rem;
    }
+
+   .postpage-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    size: 40px;
+    margin-left: 1.4em;
+   } 
+
+   .like{
+    font-size: 40px;
+   }
+   .likeno{
+     margin-left:4px;
+     font-size: 30px;
+   }
+   .dislikeno{
+    margin-left:4px;
+    font-size: 30px;
+   }
+   .dislike{
+    font-size: 40px;
+   }
+   .comment{
+    font-size: 40px;
+    margin-left: 1rem;
+   }
+   .share{
+    font-size: 40px;
+    margin-left: 6px;
+    margin-bottom: 1rem;
+   }
+
+   .hide-on-small{
+    display: none;
+  }
+   
+
    .PostPage img{
     border: 2px solid black;
     border-radius: 20px;
@@ -1306,8 +1407,48 @@ width: 100%;} */
   height: 100px;
  }
  .PostPage{
-  margin-top:14rem;
+    margin-top: 13rem;
+    padding: 16px;
+    width: 90%;
+   }
+
+ 
+ .postpage-icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  size: 70px;
+  margin-left: 1rem;
+ } 
+
+ .like{
+  font-size: 50px;
  }
+ .likeno{
+   margin-left:4px;
+   font-size: 40px;
+ }
+ .dislikeno{
+  margin-left:4px;
+  font-size: 40px;
+ }
+ .dislike{
+  font-size: 50px;
+ }
+ .comment{
+  font-size: 50px;
+/*   margin-left: 1rem; */
+ }
+ .share{
+  font-size: 50px;
+  margin-left: 6px;
+  margin-bottom: 1rem;
+ }
+
+ hide-on-small {
+  display: none;
+}
 
  .nav-link-custom{
   background-color: rgb(162 165 182);
@@ -1407,7 +1548,40 @@ width: 100%;} */
       box-shadow: 12px 10px 10px rgb(87, 152, 196);
       width: 1000px;
     }
+    .PostPage{
+      width: 90%;
     }
+
+     .postpage-icons{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+     }
+     .like{
+      font-size: 60px;
+     }
+     .likeno{
+      margin-left:4px;
+      font-size: 50px;
+      margin-top: 14px;
+    }
+    .dislikeno{
+     margin-left:4px;
+     font-size: 50px;
+     margin-top: 4px;
+    }
+     .dislike{
+      font-size: 60px;
+     }
+     .comment{
+      font-size: 60px;
+     }
+     .share{
+      font-size: 60px;
+      margin-bottom: 1rem;
+     }
+    }
+    
  
  @media screen and (min-width: 992px) {
   /* Styles applied when the screen width is 600 pixels or more */
