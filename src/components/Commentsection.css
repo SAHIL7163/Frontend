@@ -1,0 +1,95 @@
+/* Comment Section */
+.comment-section {
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid rgb(87, 152, 196);
+}
+
+/* Comment Form */
+
+
+.comment-form {
+  display: flex;
+  flex-direction: row;
+  max-height: 40px;
+  
+
+}
+
+.comment-input {
+  width: 100%;/* Reduce margin between input and button */
+  border: 1px solid #ddd;
+  border-radius: 6px; /* Slightly smaller border radius */
+  background-color: #e8f0f190;
+}
+
+/* Add Comment Button */
+.add-btn {
+  padding: 0px;
+  background-color: #4CAF50;
+  font-size: 40px;
+  color: white;
+  background-color: #0073e6;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+  margin : 0px;
+}
+
+
+/* Comments List */
+.comments-list{
+  line-height: 1.2;
+  background-color: #e8f0f190;
+  
+  
+}
+
+
+.comment-card {
+  background-color: e8f0f190;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #e8f0f190;
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.comment-username {
+  margin-bottom: 3px;
+  font-weight:600;
+  color: #000102;
+  font-size: 1.2em;
+}
+
+.comment-date {
+  font-size: 0.65em; 
+  margin-bottom: 3px;/* Reduce font size */
+  color: #888;
+}
+
+
+.comment-content {
+  font-size: 0.8em; 
+  color: #333;
+  margin-left: 2px;
+}
+
+.delete-btn {
+  background-color: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.delete-btn:hover {
+  color: red
+}
