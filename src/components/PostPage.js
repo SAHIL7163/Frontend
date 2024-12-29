@@ -163,14 +163,13 @@ const PostPage = ({posts,handleDelete}) => {
     </article>
     </>}
 {(auth.user.username === post.user) &&
-    <> d-flex 
+  
       <div className='justify-content-center'>
    <Link to={`/edit/${post._id}`}><button className='btn btn-lg btn-primary' type='button'>Edit Blog</button></Link>
    <button className='btn btn-lg delete-button btn-secondary' type='button' onClick={()=>handleDelete(post._id)}>
   Delete Blog
 </button>
     </div> 
-     </>
   }
   
   
